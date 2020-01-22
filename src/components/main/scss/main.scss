@@ -1,0 +1,65 @@
+@import 'core.scss';
+
+#container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 100px;
+}
+h2 {
+    text-align: center;
+    vertical-align: middle;
+    background-color: $table-header-color;
+    border-bottom: $border;
+    height: 50px;
+    padding: 10px 0;
+}
+.table {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5,19.5%);
+    grid-column-gap: 0.625%;
+    width:100%;
+    background-color: #f5f7fb;
+}
+.col {
+    position: relative;
+    background-color: #fff;
+    box-shadow: rgba(48,54,69,.04) 0 2px 4px 0;
+    border: $border;
+}
+.row {
+    display: block;
+    height: 100px;
+    padding: 15px;
+    p{
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        top:50%;
+        transform: translateY(-50%);
+        font-size: 26px;
+    }
+}
+.row + .row {
+    border-top: $border;
+}
+
+@media only screen and (max-width:1250px){
+    .table {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3,auto);
+        grid-row-gap: 0.625%;
+    }
+}
+@media only screen and (max-width:585px){
+    .table {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,auto);
+        grid-row-gap: 0.625%;
+    }
+}

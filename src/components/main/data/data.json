@@ -1,0 +1,41 @@
+[
+    {
+        "day": "Monday", 
+        "lessons":[
+            "Fizyka"
+        ]
+    },
+    {
+        "day": "Tuesday", 
+        "lessons":[
+            "SO",
+            "BHP",
+            "SO"
+        ]
+    },
+    {
+        "day": "Wednesday", 
+        "lessons":[
+            "Chemia",
+            "Historia",
+            "Historia",
+            "UTK",
+            "Geografia"
+        ]
+    },
+    {
+        "day": "Thursday", 
+        "lessons":[
+            "UTK",
+            "Historia",
+            "PSO",
+            "EDB"
+        ]
+    },
+    {
+        "day": "Friday", 
+        "lessons":[
+            "PUTK"
+        ]
+    }
+]

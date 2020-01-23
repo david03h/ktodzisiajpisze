@@ -30,14 +30,12 @@ if(days>0){
 	index.index += Math.floor(days)+1;
 	if(index.index == people.length) index.index = 0;
 	while(index.index > people.length-1){
-		let a = index.index - people.length-1;
-		index.index = 0 + a;
+		let a = index.index - (people.length-1);
+		index.index = -1 + a;
 	}
 	index.date = today;
 	fs.writeFile("./src/components/main/data/index.json", JSON.stringify(index),function (err) {
 		if (err) return console.log(err);
-		console.log(JSON.stringify(index));
-		console.log('writing to ' + "./src/components/main/data/index.json");
 	});
 }
 

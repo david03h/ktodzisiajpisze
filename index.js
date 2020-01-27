@@ -1,7 +1,7 @@
 const express = require('express'),
 	app = express(),
 	http = require('http').Server(app), 
-	fs = require('fs')
+	fs = require('fs'),
 	PORT = 4000;
 
 //postatwowa konfiguracja
@@ -38,6 +38,18 @@ if(days>0){
 		if (err) return console.log(err);
 	});
 }
+
+var timeLeft = (7-(today.getDay())-1)*86000000;
+console.log(timeLeft);
+setInterval(()=>{
+	index.index += 1;
+	if(index.index == people.length) index.index = 0;
+	today = new Date();
+	index.date = today;
+	fs.writeFile("./src/components/main/data/index.json", JSON.stringify(index),function (err) {
+		if (err) return console.log(err);
+	});
+},timeLeft);
 
 //odpalanie serwera
 http.listen(process.env.PORT || PORT);

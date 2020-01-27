@@ -39,13 +39,19 @@ h2 {
     display: block;
     height: 100px;
     padding: 15px;
-    p{
+    p {
         position: relative;
         text-align: center;
         vertical-align: middle;
         top:50%;
         transform: translateY(-50%);
-        font-size: 26px;
+        font-size: 22px;
+    }
+    span {
+        background-color: red;
+        padding: 2.5px 8px;
+        border-radius:8px;
+        font-size: 18px;
     }
 }
 .row + .row {

@@ -1,0 +1,42 @@
+[
+    {
+        "lesson": "Fizyka",
+        "color": "#4b6773"
+    },
+    {
+        "lesson": "SO",
+        "color": "#3c798f"
+    },
+    {
+        "lesson": "BHP",
+        "color": "#708217"
+    },
+    {
+        "lesson": "Chemia",
+        "color": "#12a392"
+    },
+    {
+        "lesson": "Historia",
+        "color": "#8a6213"
+    },
+    {
+        "lesson": "UTK",
+        "color": "#505291"
+    },
+    {
+        "lesson": "Geografia",
+        "color": "#7b47bf"
+    },
+    {
+        "lesson": "PSO",
+        "color": "#3a8f15"
+    },
+    {
+        "lesson": "EDB",
+        "color": "#bf9b08"
+    },
+    {
+        "lesson": "PUTK",
+        "color": "#87082a"
+    }
+]

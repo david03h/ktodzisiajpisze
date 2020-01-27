@@ -11,15 +11,15 @@ export default class Table extends React.Component<any,any>{
 
     render(){
         let personIndex = index.index;
-        var lessons = data.map(day => {
+        var lessons = data.map((day,a) => {
             return(
-                <Column>
+                <Column key={a}>
                     <h2>{day.day}</h2>
-                    {day.lessons.map(lesson => {
+                    {day.lessons.map((lesson,b) => {
                         let person = peopleData[personIndex];
                         personIndex == peopleData.length-1 ? personIndex = 0 : personIndex++;
                         return(
-                            <Lesson name={lesson} person={person}/>
+                            <Lesson name={lesson} person={person} key={b}/>
                         );
                     })}
                 </Column>

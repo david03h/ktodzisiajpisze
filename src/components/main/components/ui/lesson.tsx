@@ -1,10 +1,20 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import colors from '../../data/lessons.json';
 
 export default class Lesson extends React.Component<any,any>{
     render(){
+
+        var style;
+        for(let lesson of colors){
+            if(lesson.lesson == this.props.name){
+                style = {
+                    backgroundColor: lesson.color
+                };
+            }
+        }
         return(
-        <div className="row"><p>{this.props.name} {this.props.person}</p></div>
+        <div className="row"><p><span style={style}>{this.props.name}</span> {this.props.person}</p></div>
         );
     }
 }

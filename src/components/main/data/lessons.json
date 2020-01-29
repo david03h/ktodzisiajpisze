@@ -1,7 +1,7 @@
 [
     {
         "lesson": "Fizyka",
-        "color": "#4b6773"
+        "color": "#acb9bf"
     },
     {
         "lesson": "SO",
@@ -9,7 +9,7 @@
     },
     {
         "lesson": "BHP",
-        "color": "#708217"
+        "color": "#95ad1d"
     },
     {
         "lesson": "Chemia",
@@ -17,15 +17,15 @@
     },
     {
         "lesson": "Historia",
-        "color": "#8a6213"
+        "color": "#b07c17"
     },
     {
         "lesson": "UTK",
-        "color": "#505291"
+        "color": "#5f61b3"
     },
     {
         "lesson": "Geografia",
-        "color": "#7b47bf"
+        "color": "#984ad9"
     },
     {
         "lesson": "PSO",
@@ -37,6 +37,6 @@
     },
     {
         "lesson": "PUTK",
-        "color": "#87082a"
+        "color": "#c91042"
     }
 ]

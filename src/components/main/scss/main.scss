@@ -9,16 +9,21 @@
     align-items: center;
     background-color: #fff;
     margin-bottom: 100px;
+    left:50%;
+    transform: translateX(-50%);
 }
 h2 {
-    text-align: center;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: $table-header-color;
     border-bottom: $border;
     height: 50px;
     padding: 10px 0;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
+    font-family: 'Roboto Slab', serif;
+    font-size: 19px;
 }
 .table {
     position: relative;
@@ -45,13 +50,15 @@ h2 {
         vertical-align: middle;
         top:50%;
         transform: translateY(-50%);
-        font-size: 22px;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
     }
     span {
-        background-color: red;
+        background-color: rgb(236, 232, 232);
         padding: 2.5px 8px;
         border-radius:8px;
-        font-size: 18px;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 }
 .row + .row {
@@ -60,9 +67,25 @@ h2 {
 
 @media only screen and (max-width:1250px){
     .table {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 49% 49%;
         grid-template-rows: repeat(3,auto);
-        grid-row-gap: 0.625%;
+        grid-column-gap: 2%;
+        grid-row-gap: 15px;
+    }
+}
+@media only screen and (min-width:1030px) and (max-width:1250px){
+    #container {
+        max-width: 60vw;
+    }
+}
+@media only screen and (min-width:900px) and (max-width:1029.98px){
+    #container {
+        max-width: 80vw;
+    }
+}
+@media only screen and (min-width:750px) and (max-width:899.98px){
+    #container {
+        max-width: 90vw;
     }
 }
 @media only screen and (max-width:585px){
@@ -70,5 +93,10 @@ h2 {
         grid-template-columns: 100%;
         grid-template-rows: repeat(5,auto);
         grid-row-gap: 0.625%;
+    }
+}
+@media only screen and (min-width:400px) and (max-width:584.98px){
+    #container {
+        max-width: 70vw;
     }
 }

@@ -2,40 +2,86 @@
     {
         "day": "Monday", 
         "lessons":[
-            "Fizyka"
+            {
+                "name":"Fizyka",
+                "hours": ["8:00","8:45"]
+            }
         ]
     },
     {
         "day": "Tuesday", 
         "lessons":[
-            "SO",
-            "BHP",
-            "SO"
+            {
+                "name":"SO",
+                "hours":["8:00","8:45"]
+            },
+            {
+                "name":"BHP",
+                "hours":["8:55","9:40"]
+            },
+            {
+                "name":"SO",
+                "hours":["11:50","12:35"]
+            }
         ]
     },
     {
         "day": "Wednesday", 
         "lessons":[
-            "Chemia",
-            "Historia",
-            "Historia",
-            "UTK",
-            "Geografia"
+            {
+                "name":"Chemia",
+                "hours":["8:00","8:45"]
+            },
+            {
+                "name":"Historia",
+                "hours":["8:55","9:40"]
+            },
+            {
+                "name":"Historia",
+                "hours":["9:50","10:35"]
+            },
+            {
+                "name":"UTK",
+                "hours":["10:45","11:30"]
+            },
+            {
+                "name":"Geografia",
+                "hours":["11:50","12:35"]
+            }
         ]
     },
     {
         "day": "Thursday", 
         "lessons":[
-            "UTK",
-            "Historia",
-            "PSO",
-            "EDB"
+            {
+                "name":"UTK",
+                "hours":["7:10","7:55"]
+            },
+            {
+                "name":"Historia",
+                "hours":["9:50","10:35"]
+            },
+            {
+                "name":"PSO",
+                "hours":["10:45","11:30"]
+            },
+            {
+                "name":"PSO",
+                "hours":["11:50","12:35"]
+            },
+            {
+                "name":"EDB",
+                "hours":["13:40","14:25"]
+            }
         ]
     },
     {
         "day": "Friday", 
         "lessons":[
-            "PUTK"
+            {
+                "name":"PUTK",
+                "hours":["10:45","11:30"]
+            }
         ]
     }
 ]

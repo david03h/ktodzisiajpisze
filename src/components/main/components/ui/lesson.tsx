@@ -14,7 +14,16 @@ export default class Lesson extends React.Component<any,any>{
             }
         }
         return(
-        <div className="row"><p><span style={style}>{this.props.name}</span> {this.props.person}</p></div>
+            <div className="row">
+                <p>
+                    <p>
+                        <p>{this.props.hours[0]}</p>
+                        <p>{this.props.hours[1]}</p>
+                    </p>
+                    <span style={style}>{this.props.name}</span> 
+                    {this.props.person}
+                </p>
+            </div>
         );
     }
 }

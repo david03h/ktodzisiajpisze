@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1&display=swap');
 
 html, body{
     margin:20px;
@@ -8,6 +9,7 @@ html, body{
 
 *,*::before,*::after{
     box-sizing: border-box;
+    user-select: none;
 }
 h1,h2,h3,h4,h5,h6,p {
     margin:0;

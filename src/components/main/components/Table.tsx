@@ -19,7 +19,7 @@ export default class Table extends React.Component<any,any>{
                         let person = peopleData[personIndex];
                         personIndex == peopleData.length-1 ? personIndex = 0 : personIndex++;
                         return(
-                            <Lesson name={lesson} person={person} key={b}/>
+                            <Lesson name={lesson.name} person={person} hours={lesson.hours} key={b}/>
                         );
                     })}
                 </Column>

@@ -79,6 +79,10 @@
         "day": "Friday", 
         "lessons":[
             {
+                "name":"WOK",
+                "hours":["8:55","9:40"]
+            },
+            {
                 "name":"PUTK",
                 "hours":["10:45","11:30"]
             }

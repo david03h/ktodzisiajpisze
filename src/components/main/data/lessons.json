@@ -38,5 +38,9 @@
     {
         "lesson": "PUTK",
         "color": "#c91042"
+    },
+    {
+        "lesson": "WOK",
+        "color": "#15cf5a"
     }
 ]

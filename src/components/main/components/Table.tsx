@@ -16,10 +16,13 @@ export default class Table extends React.Component<any,any>{
                 <Column key={a}>
                     <h2>{day.day}</h2>
                     {day.lessons.map((lesson,b) => {
-                        let person = peopleData[personIndex];
-                        personIndex == peopleData.length-1 ? personIndex = 0 : personIndex++;
+                        let person = undefined;
+                        if(lesson.write){
+                            person = peopleData[personIndex];
+                            personIndex == peopleData.length-1 ? personIndex = 0 : personIndex++;
+                        }
                         return(
-                            <Lesson name={lesson.name} person={person} hours={lesson.hours} key={b}/>
+                            <Lesson name={lesson.name} person={person} hours={lesson.hours} write={lesson.write} key={b}/>
                         );
                     })}
                 </Column>

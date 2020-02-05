@@ -17,7 +17,7 @@ app.use(express.static('./public'));
 require('./routes/router.js')(app);
 
 //index handler
-require('./js/time2.js');
+require('./js/time.js');
 
 //odpalanie serwera
 http.listen(process.env.PORT || PORT);

@@ -1,5 +1,5 @@
 {
-  "name": "defaultreactexpresssetup",
+  "name": "ktodzisiajpisze",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,19 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/david03h/DefaultReactExpressSetup.git"
+    "url": "git+https://github.com/david03h/ktodzisiajpisze.git"
   },
   "keywords": [
     "react",
-    "express",
-    "setup"
+    "express"
   ],
   "author": "Dawid Harat (PEPE)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/david03h/DefaultReactExpressSetup/issues"
+    "url": "https://github.com/david03h/ktodzisiajpisze/issues"
   },
-  "homepage": "https://github.com/david03h/DefaultReactExpressSetup#readme",
+  "homepage": "https://github.com/david03h/ktodzisiajpisze#readme",
   "dependencies": {
     "@types/node": "12.7.11",
     "@types/react": "16.9.16",
@@ -35,7 +34,7 @@
     "express": "4.17.1",
     "express-ejs-extend": "0.0.1",
     "fs": "0.0.1-security",
-    "moment": "^2.24.0",
+    "moment": "2.24.0",
     "react": "16.10.1",
     "react-dom": "16.10.1",
     "react-router-dom": "5.1.2",

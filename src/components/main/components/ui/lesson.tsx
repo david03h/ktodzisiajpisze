@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import colors from '../../data/lessons.json';
+import { spawn } from 'child_process';
 
 export default class Lesson extends React.Component<any,any>{
     render(){
@@ -20,8 +21,8 @@ export default class Lesson extends React.Component<any,any>{
                         <p>{this.props.hours[0]}</p>
                         <p>{this.props.hours[1]}</p>
                     </p>
-                    <span style={style}>{this.props.name}</span> 
-                    {this.props.person}
+                    {this.props.write ? <span style={style}>{this.props.name}</span> : <span className="blank">{this.props.name}</span>} 
+                    {this.props.write ? this.props.person : null}
                 </p>
             </div>
         );

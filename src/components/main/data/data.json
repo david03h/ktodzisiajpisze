@@ -4,7 +4,33 @@
         "lessons":[
             {
                 "name":"Fizyka",
-                "hours": ["8:00","8:45"]
+                "hours": ["8:00","8:45"],
+                "write": true
+            },
+            {
+                "name":"J.Polski",
+                "hours": ["8:55","9:40"],
+                "write": false
+            },
+            {
+                "name":"Podst.p",
+                "hours": ["9:50","10:35"],
+                "write": false
+            },
+            {
+                "name":"WOS",
+                "hours": ["10:45","11:30"],
+                "write": false
+            },
+            {
+                "name":"WF",
+                "hours": ["11:50","12:35"],
+                "write": false
+            },
+            {
+                "name":"WF",
+                "hours": ["12:45","13:30"],
+                "write": false
             }
         ]
     },
@@ -13,15 +39,33 @@
         "lessons":[
             {
                 "name":"SO",
-                "hours":["8:00","8:45"]
+                "hours":["8:00","8:45"],
+                "write":true
             },
             {
                 "name":"BHP",
-                "hours":["8:55","9:40"]
+                "hours":["8:55","9:40"],
+                "write":true
+            },
+            {
+                "name":"Matematyka",
+                "hours": ["9:50","10:35"],
+                "write": false
+            },
+            {
+                "name":"Matematyka",
+                "hours": ["10:45","11:30"],
+                "write": false
             },
             {
                 "name":"SO",
-                "hours":["11:50","12:35"]
+                "hours":["11:50","12:35"],
+                "write":true
+            },
+            {
+                "name":"WF",
+                "hours": ["12:45","13:30"],
+                "write": false
             }
         ]
     },
@@ -29,24 +73,44 @@
         "day": "Wednesday", 
         "lessons":[
             {
+                "name":"Z. z wych.",
+                "hours": ["7:10","7:55"],
+                "write": false
+            },
+            {
                 "name":"Chemia",
-                "hours":["8:00","8:45"]
+                "hours":["8:00","8:45"],
+                "write":true
             },
             {
                 "name":"Historia",
-                "hours":["8:55","9:40"]
+                "hours":["8:55","9:40"],
+                "write":true
             },
             {
                 "name":"Historia",
-                "hours":["9:50","10:35"]
+                "hours":["9:50","10:35"],
+                "write":true
             },
             {
                 "name":"UTK",
-                "hours":["10:45","11:30"]
+                "hours":["10:45","11:30"],
+                "write":true
             },
             {
                 "name":"Geografia",
-                "hours":["11:50","12:35"]
+                "hours":["11:50","12:35"],
+                "write":true
+            },
+            {
+                "name":"J.Polski",
+                "hours": ["12:45","13:30"],
+                "write": false
+            },
+            {
+                "name":"J.Polski",
+                "hours": ["13:40","14:25"],
+                "write": false
             }
         ]
     },
@@ -55,23 +119,43 @@
         "lessons":[
             {
                 "name":"UTK",
-                "hours":["7:10","7:55"]
+                "hours":["7:10","7:55"],
+                "write":true
+            },
+            {
+                "name":"Matematyka",
+                "hours": ["8:00","8:45"],
+                "write": false
+            },
+            {
+                "name":"Matematyka",
+                "hours": ["8:55","9:40"],
+                "write": false
             },
             {
                 "name":"Historia",
-                "hours":["9:50","10:35"]
+                "hours":["9:50","10:35"],
+                "write":true
             },
             {
                 "name":"PSO",
-                "hours":["10:45","11:30"]
+                "hours":["10:45","11:30"],
+                "write":true
             },
             {
                 "name":"PSO",
-                "hours":["11:50","12:35"]
+                "hours":["11:50","12:35"],
+                "write":true
+            },
+            {
+                "name":"Podst.p",
+                "hours": ["12:45","13:30"],
+                "write": false
             },
             {
                 "name":"EDB",
-                "hours":["13:40","14:25"]
+                "hours":["13:40","14:25"],
+                "write":true
             }
         ]
     },
@@ -80,11 +164,28 @@
         "lessons":[
             {
                 "name":"WOK",
-                "hours":["8:55","9:40"]
+                "hours":["8:55","9:40"],
+                "write":true
+            },
+            {
+                "name":"J.Angielski",
+                "hours": ["9:50","10:35"],
+                "write": false
             },
             {
                 "name":"PUTK",
-                "hours":["10:45","11:30"]
+                "hours":["10:45","11:30"],
+                "write":true
+            },
+            {
+                "name":"J.Angielski",
+                "hours": ["11:50","12:35"],
+                "write": false
+            },
+            {
+                "name":"J.Niemiecki",
+                "hours": ["12:45","13:30"],
+                "write": false
             }
         ]
     }

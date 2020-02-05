@@ -1,7 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import colors from '../../data/lessons.json';
-import { spawn } from 'child_process';
 
 export default class Lesson extends React.Component<any,any>{
     render(){

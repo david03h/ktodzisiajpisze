@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
-import HelloWorld1 from './main/App';
+import Main from './main/App';
 
 export default class App extends React.Component<any,any>{
     constructor(props:any){
@@ -15,7 +15,7 @@ export default class App extends React.Component<any,any>{
                 <div>
                     <Switch>
                         <Route exact path="/">
-                            <HelloWorld1/>
+                            <Main/>
                         </Route>
                     </Switch>
                 </div>

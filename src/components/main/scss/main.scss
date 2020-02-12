@@ -7,7 +7,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
     margin-bottom: 100px;
     left:50%;
     transform: translateX(-50%);
@@ -31,7 +30,6 @@ h2 {
     grid-template-columns: repeat(5,19.5%);
     grid-column-gap: 0.625%;
     width:100%;
-    background-color: #f5f7fb;
 }
 .col {
     position: relative;
@@ -63,6 +61,7 @@ h2 {
             font-family: 'Gothic A1', sans-serif;
             color:rgb(0, 0, 190);
             font-size: 14px;
+            font-weight:600;
             align-self: flex-start;
             align-items: flex-end;
         }
@@ -117,5 +116,37 @@ h2 {
 @media only screen and (min-width:400px) and (max-width:584.98px){
     #container {
         max-width: 70vw;
+    }
+}
+
+
+//dark prefer
+
+@media (prefers-color-scheme: dark){
+    body {
+        background-color: #121212;
+    }
+    h2 {
+        background-color: #252525;
+        color: rgba(255, 255, 255, 0.575);
+    }
+    .col {
+        background-color: #252525;
+        box-shadow: rgba(48,54,69,.04) 0 2px 4px 0;
+    }
+    .row {
+        > p {
+            color: rgb(175, 175, 175); 
+            > p {
+                color:rgba(27, 27, 247, 0.89);
+            }
+        }
+        span {
+            background-color: rgb(29, 29, 29);
+            color: lightgray;
+        }
+        .blank{
+            color: rgb(94, 94, 94);
+        }
     }
 }

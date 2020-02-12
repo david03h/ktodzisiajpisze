@@ -8,7 +8,15 @@ import Column from './Column';
 import Lesson from './ui/lesson';
 
 export default class Table extends React.Component<any,any>{
-
+    constructor(props:any) {
+        super(props);
+        this.state = {
+            darkMode: window.matchMedia("(prefers-color-scheme:dark)").matches
+        }
+        window.matchMedia("(prefers-color-scheme:dark)").onchange = (change) => {
+            this.setState({darkMode:change.matches});
+        }
+    }
     render(){
         let personIndex = index.index;
         var lessons = data.map((day,a) => {
@@ -22,7 +30,7 @@ export default class Table extends React.Component<any,any>{
                             personIndex == peopleData.length-1 ? personIndex = 0 : personIndex++;
                         }
                         return(
-                            <Lesson name={lesson.name} person={person} hours={lesson.hours} write={lesson.write} key={b}/>
+                            <Lesson name={lesson.name} person={person} hours={lesson.hours} write={lesson.write} color={this.state.darkMode} key={b}/>
                         );
                     })}
                 </Column>

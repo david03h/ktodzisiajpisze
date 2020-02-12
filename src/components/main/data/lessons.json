@@ -1,46 +1,57 @@
 [
     {
         "lesson": "Fizyka",
-        "color": "#acb9bf"
+        "color": "#acb9bf",
+        "darkColor": "#667379"
     },
     {
         "lesson": "SO",
-        "color": "#3c798f"
+        "color": "#3c798f",
+        "darkColor": "#0a475d"
     },
     {
         "lesson": "BHP",
-        "color": "#95ad1d"
+        "color": "#95ad1d",
+        "darkColor": "#637b00"
     },
     {
         "lesson": "Chemia",
-        "color": "#12a392"
+        "color": "#12a392",
+        "darkColor": "#127160"
     },
     {
         "lesson": "Historia",
-        "color": "#b07c17"
+        "color": "#b07c17",
+        "darkColor": "#7e4a17"
     },
     {
         "lesson": "UTK",
-        "color": "#5f61b3"
+        "color": "#5f61b3",
+        "darkColor": "#2d2f8b"
     },
     {
         "lesson": "Geografia",
-        "color": "#984ad9"
+        "color": "#984ad9",
+        "darkColor": "#6718a7"
     },
     {
         "lesson": "PSO",
-        "color": "#3a8f15"
+        "color": "#3a8f15",
+        "darkColor": "#085d15"
     },
     {
         "lesson": "EDB",
-        "color": "#bf9b08"
+        "color": "#bf9b08",
+        "darkColor": "#8d6a08"
     },
     {
         "lesson": "PUTK",
-        "color": "#c91042"
+        "color": "#c91042",
+        "darkColor": "#971010"
     },
     {
         "lesson": "WOK",
-        "color": "#15cf5a"
+        "color": "#15cf5a",
+        "darkColor": "#159d27"
     }
 ]

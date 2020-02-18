@@ -8,7 +8,7 @@
                 "write": true
             },
             {
-                "name":"J.Polski",
+                "name":"Polski",
                 "hours": ["8:55","9:40"],
                 "write": false
             },
@@ -103,12 +103,12 @@
                 "write":true
             },
             {
-                "name":"J.Polski",
+                "name":"Polski",
                 "hours": ["12:45","13:30"],
                 "write": false
             },
             {
-                "name":"J.Polski",
+                "name":"Polski",
                 "hours": ["13:40","14:25"],
                 "write": false
             }
@@ -168,7 +168,7 @@
                 "write":true
             },
             {
-                "name":"J.Angielski",
+                "name":"Angielski",
                 "hours": ["9:50","10:35"],
                 "write": false
             },
@@ -178,12 +178,12 @@
                 "write":true
             },
             {
-                "name":"J.Angielski",
+                "name":"Angielski",
                 "hours": ["11:50","12:35"],
                 "write": false
             },
             {
-                "name":"J.Niemiecki",
+                "name":"Niemiecki",
                 "hours": ["12:45","13:30"],
                 "write": false
             }

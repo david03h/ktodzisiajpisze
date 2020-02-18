@@ -1,22 +1,26 @@
 const fs = require('fs'),
 	  moment = require('moment');
 	  require('colors');
+var saturday;
+var timeout;
 
 function loop(){
 	let	leftToEnd = 7-today.get("day")-1;
-	let saturday;
 	leftToEnd <= 0 ? saturday = moment().add(7+leftToEnd,'days') : saturday = moment().add(leftToEnd,'days');
 	saturday.set({'hours':0,'minutes':0,'seconds':0,'milliseconds':0});
-	setTimeout(()=>{
-		index.index += 1;
-		if(index.index == people.length) index.index = 0;
-		today = moment();
-		index.date = today.format();
-		fs.writeFile("./src/components/main/data/index.json", JSON.stringify(index),function (err) {
-			if (err) return console.log(err);
-		});
-		loop();
+	timeout = setTimeout(()=>{
+		setTimeout(()=>{
+			index.index += 1;
+			if(index.index == people.length) index.index = 0;
+			today = moment();
+			index.date = today.format();
+			fs.writeFile("./src/components/main/data/index.json", JSON.stringify(index),function (err) {
+				if (err) return console.log(err);
+			});
+			loop();
+		},10000);
 	},saturday.diff(today,'milliseconds'));
+	timeout.date = moment();
 }
 
 //index handler
@@ -52,3 +56,30 @@ if(days && days>0){
 }
 
 loop();
+
+
+// Commands
+
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+process.stdout.write("> ");
+
+process.stdin.on('data', function (text) {
+	switch(text.trim()){
+		case "status":
+			console.log(timeout.date.format().green,saturday.format().green,saturday.diff(timeout.date,"milliseconds"));
+			console.log(saturday.diff(moment(),"milliseconds"));
+		break;
+		case "quit":
+			console.log("Server Stop".yellow.bold);
+			process.exit(0);
+		default:
+			console.log(`There's no command named '${text.trim()}'.`.red+`
+Available Commands:`.white+`
+- status    [prints timeout data]
+- quit      [stops server]`
+.green);
+		break;
+	}
+	process.stdout.write("> ");
+});
